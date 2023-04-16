@@ -23,7 +23,7 @@ function App() {
     setLoading(true)    
     try {
   
-      const response =await axios.post('http://localhost:5000/' , {input})
+      const response =await axios.post('https://chat-app-qzpa.onrender.com' , {input})
       const bot = await response.data.bot
       setOutput(`${bot}`)
       console.log(bot);
